@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header flex flex_justify-content-space-around">
+        <div class="text text_transform-uppercase wrapper flex flex_align-items-center flex_justify-content-space-between">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/Vector Smart Object.png" alt="logo">
+                </a>
+            </div>
+            <nav class="header__nav flex flex_justify-content-space-between">
+                <a class="link link_red link__header-nav text" href="#">Reality</a>
+                <a class="link link_red link__header-nav text" href="#">Living</a>
+                <a class="link link_red link__header-nav text" href="#">EduCation</a>
+                <a class="link link_red link__header-nav text" href="#">Entertainment</a>
+                <a class="link link_red link__header-nav text" href="#">Mobility</a>
+            </nav>
+            <div class="wrapper_search flex">
+                <div class="header__search flex flex_align-items-center flex_justify-content-space-around position">
+                    <input class="header__input padding" type="text">
+                    <a class="header__search-button" href=""><i class="fas fa-search text_color-white text_font-size-24"></i></a> 
+
+                </div>
+                <div class="text_color-white header__accaunt flex flex_align-items-center flex_justify-content-space-around">
+                    <p><i class="fas fa-user text_font-size-16"></i> LOGIN</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="search flex flex_align-items-center flex_flex-direction-column">
+        <div class="search__layer search__layer_gray"></div>
+        <div class="search__layer search__layer_symbol"></div>
+        <div class="search__wrapper flex flex_align-items-center flex_flex-direction-column">
+            <h2 class="text text_color-white text_font-size-30 text_text-align-center margin_top-60 margin_bottom-35">What are you looking for?</h2>
+            <form action="" class="flex flex_flex-direction-column flex_align-items-center text text_font-size-18">
+                <div class="search__selects flex flex_justify-content-space-between margin_bottom-25">
+                    <select name="city" class="search__input search__input_select cursor text_color-white padding padding_0-15">
+                        <option value="Dubai" selected>Dubai</option>
+                        <option value="Dubai">Dubai</option>
+                        <option value="Dubai">Dubai</option>
+                        <option value="Dubai">Dubai</option>
+                        <option value="Dubai">Dubai</option>
+                    </select>
+                    <select name="topic" class="cursor search__input search__input_select text_color-white  padding padding_0-15">
+                        <option value="Reality">Reality</option>
+                        <option value="Living">Living</option>
+                        <option selected value="EduCation">EduCation</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Mobility">Mobility</option>
+                    </select>
+                </div>
+                <input type="text" class="search__input search__input_input text_color-white padding padding_0-15 margin_bottom-30" placeholder="Keyword, name, date, ...">
+                <button class="search__button text_color-white cursor">Search</button>
+            </form>
+        </div>
+    </div>
+    <div class="filtres flex flex_justify-content-space-around">
+        <div class="wrapper_block text text_transform-uppercase text_font-size-12 flex flex_justify-content-space-between flex_align-items-center">
+            <div class="filtres__priority  flex flex_justify-content-space-between text_font-size-12">
+                <a class="link link_red text text_font-size-12 cursor" >Recommended</a>
+                <a class="link link_red text text_font-size-12 cursor" >Latest</a>
+                <a class="link link_red text text_font-size-12 cursor" >Highlights</a>
+            </div>
+            <div class="filtres__map text_text-align-center">
+                <select name="city" class="text text_transform-uppercase text_color-red filtres__select filtres__select_city cursor">
+                    <option value="Dubai" selected>Dubai</option>
+                    <option value="Dubai">Dubai</option>
+                    <option value="Dubai">Dubai</option>
+                    <option value="Dubai">Dubai</option>
+                    <option value="Dubai">Dubai</option>
+                </select>
+                <a class="text  text_transform-uppercase link filtres__select filtres__select_map" href="#">Show map <i class="fas fa-map-marked-alt"></i></a>
+            </div>
+            <div class="text filtres__theme flex flex_justify-content-space-between flex_align-items-center">
+                <h3 class="text_font-size-12">Filter:</h3>
+                <a class="link link__filtres-theme link__filtres-theme_green text_text-align-center text_color-white text_font-size-24" href="#"><i class="fas fa-home"></i></a>
+                <a class="link link__filtres-theme link__filtres-theme text_text-align-center text_color-white text_font-size-24" href="#"><i class="far fa-grin-squint"></i></a>
+                <a class="link link__filtres-theme link__filtres-theme text_text-align-center text_color-white text_font-size-24" href="#"><i class="fas fa-pen-nib"></i></a>
+                <a class="link link__filtres-theme link__filtres-theme_yellow text_text-align-center text_color-white text_font-size-24" href="#"><i class="fas fa-music"></i></a>
+                <a class="link link__filtres-theme link__filtres-theme_purple text_text-align-center text_color-white text_font-size-24" href="#"><i class="fas fa-bus-alt"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="news flex flex_justify-content-flex-start flex_align-items-center flex_flex-direction-column">
+        <div class="wrapper_block-news flex flex_justify-content-space-between flex_wrap margin_top-45">
+            <div class="news-block-min news-block-min_border position">
+                <div class="news-block-min__hover flex flex_flex-direction-column flex_align-items-center">
+                    <div class="news-block-min__background-hover news-block-min__circle_green"></div>  
+                    <a href="" class="margin_top-25 margin_bottom-25 link link__read-more text_transform-uppercase text text_font-size-12 text_color-white padding padding_10-20"><i class="fas fa-search"></i> Show more</a>
+                    <div class="wrapper_comment flex flex_justify-content-space-between position">
+                        <p class="text_color-white text_font-size-16"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                        <p class="text_color-white text_font-size-16"><i class="far fa-comments"></i></p>
+                    </div>
+                </div>
+                <img src="img/Layer 6.png" alt="" class="position_absolute">
+                <h3 class="news-block-min__prise text text_text-align-center text_color-white text_font-size-12" >$2,990</h3>
+                <div class="news-block-min__info news-block-min__info_green padding padding_0-10 text flex flex_flex-direction-column flex_align-items-center">
+                    <div class="news-block-min__circle news-block-min__circle_green text_text-align-center">
+                        <i class="fas fa-home text_color-white text_font-size-34"></i>
+                    </div>
+                    <div class="wrapper_news margin_top-35 text_text-align-center">
+                        <a class="link text text_color-gray" href="#">2 bedroom house for rent in Dubai</a>
+                    </div>
+                    <a class="link margin_bottom-5 text_color-green text_transform-uppercase" href="#">Vision Agency</a>
+                    <p><span class="text_color-yellow"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span> (365)</p>
+                </div>
+            </div>
+            <div class="news-block-min news-block-min_border position">
+                <div class="news-block-min__hover flex flex_flex-direction-column flex_align-items-center">
+                    <div class="news-block-min__background-hover news-block-min__circle_yellow"></div>  
+                    <a href="" class="margin_top-25 margin_bottom-25 link link__read-more text_transform-uppercase text text_font-size-12 text_color-white padding padding_10-20"><i class="fas fa-search"></i> Show more</a>
+                    <div class="wrapper_comment flex flex_justify-content-space-between position">
+                        <p class="text_color-white text_font-size-16"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                        <p class="text_color-white text_font-size-16"><i class="far fa-comments"></i></p>
+                    </div>
+                </div>
+                <img src="img/Layer 7.png" alt="" class="position_absolute">
+                <div class="news-block-min__info news-block-min__info_yellow padding padding_0-10 text flex flex_flex-direction-column flex_align-items-center">
+                    <div class="news-block-min__circle news-block-min__circle_yellow text_text-align-center">
+                        <i class="fas fa-music text_color-white text_font-size-34"></i>
+                    </div>
+                    <div class="wrapper_news margin_top-35 text_text-align-center">
+                        <a class="link text text_color-gray" href="#">Beach party festival 2014</a>
+                    </div>
+                    <a class="link margin_bottom-5 text_color-yellow text_transform-uppercase" href="#">Long beach</a>
+                    <p><span class="text_color-yellow"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span> (1165)</p>
+                </div>
+            </div>
+            <div class="news-block-min news-block-min_border position">
+                <div class="news-block-min__hover flex flex_flex-direction-column flex_align-items-center">
+                    <div class="news-block-min__background-hover news-block-min__circle_purple"></div>  
+                    <a href="" class="margin_top-25 margin_bottom-25 link link__read-more text_transform-uppercase text text_font-size-12 text_color-white padding padding_10-20"><i class="fas fa-search"></i> Show more</a>
+                    <div class="wrapper_comment flex flex_justify-content-space-between position">
+                        <p class="text_color-white text_font-size-16"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                        <p class="text_color-white text_font-size-16"><i class="far fa-comments"></i></p>
+                    </div>
+                </div>
+                <img src="img/Layer 6.png" alt="" class="position_absolute">
+                <div class="news-block-min__info news-block-min__info_purple padding padding_0-10 text flex flex_flex-direction-column flex_align-items-center">
+                    <div class="news-block-min__circle news-block-min__circle_purple text_text-align-center">
+                        <i class="fas fa-bus-alt text_color-white text_font-size-34"></i>
+                    </div>
+                    <div class="wrapper_news margin_top-35 text_text-align-center">
+                        <a class="link text text_color-gray" href="#">Aliquam quis pulvinar purus</a>
+                    </div>
+                    <a class="link margin_bottom-5 text_color-purple text_transform-uppercase" href="#">Bus Trans</a>
+                    <p><span class="text_color-yellow"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span> (862)</p>
+                </div>
+            </div>
+            <div class="news-block-min news-block-min_border position">
+                <div class="news-block-min__hover flex flex_flex-direction-column flex_align-items-center">
+                    <div class="news-block-min__background-hover news-block-min__circle_green"></div>  
+                    <a href="" class="margin_top-25 margin_bottom-25 link link__read-more text_transform-uppercase text text_font-size-12 text_color-white padding padding_10-20"><i class="fas fa-search"></i> Show more</a>
+                    <div class="wrapper_comment flex flex_justify-content-space-between position">
+                        <p class="text_color-white text_font-size-16"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                        <p class="text_color-white text_font-size-16"><i class="far fa-comments"></i></p>
+                    </div>
+                </div>
+                <img src="img/Layer 8.png" alt="" class="position_absolute">
+                <h3 class="news-block-min__prise text text_text-align-center text_color-white text_font-size-12" >$2,990</h3>
+                <div class="news-block-min__info news-block-min__info_green padding padding_0-10 text flex flex_flex-direction-column flex_align-items-center">
+                    <div class="news-block-min__circle news-block-min__circle_green text_text-align-center">
+                        <i class="fas fa-home text_color-white text_font-size-34"></i>
+                    </div>
+                    <div class="wrapper_news margin_top-35 text_text-align-center">
+                        <a class="link text text_color-gray" href="#">4 bedroom house for rent in Dubai</a>
+                    </div>
+                    <a class="link margin_bottom-5 text_color-green text_transform-uppercase" href="#">reality Agency</a>
+                    <p><span class="text_color-yellow"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span> (165)</p>
+                </div>
+            </div>
+            <div class="news-block-max news-block-min_border position">
+                <img src="img/Layer 9.png" alt="" class="position_absolute">
+                <div class="news-block-max__shadow position"></div>
+                <div class="news-block-max__head flex flex_justify-content-space-between position text text_text-align-center">
+                    <a class="link text_color-white text_transform-uppercase text_font-size-18" href="#">Vision agency</a>
+                    <p><span class="text_color-yellow"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span> (365)</p>
+                </div>
+                <div class="news-block-min__info news-block-min__info_green news-block-min__info_max padding padding_0-10 text flex flex_flex-direction-column flex_align-items-center">
+                    <div class="news-block-min__circle news-block-min__circle_max news-block-min__circle_green text_text-align-center">
+                        <i class="fas fa-home text_color-white text_font-size-34"></i>
+                    </div>
+                    <div class="wrapper_news-max margin_top-20 flex flex_align-items-center flex_justify-content-space-between text_text-align-center">
+                        <img src="img/Layer 10.png" alt="">
+                        <div class="text_color-gray news-block-max__coments text_align-left flex flex_flex-direction-column flex_justify-content-space-between flex_align-items-start">
+                            <div class="text_color-yellow text_font-size-18"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                            <h2 class="text_font-weight-700">Lucy-P</h2>
+                            <p class="text_font-weight-400">“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.” <a class="text_font-weight-700 text_color-gray" href="">...read more</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-block-max news-block-min_border position">
+                <img src="img/Layer 12.png" alt="" class="position_absolute">
+                <div class="news-block-max__shadow position"></div>
+                <div class="news-block-max__head flex flex_justify-content-space-between position text text_text-align-center">
+                    <a class="link text_color-white text_transform-uppercase text_font-size-18" href="#">Skybox club</a>
+                    <p><span class="text_color-yellow"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span> (1365)</p>
+                </div>
+                <div class="news-block-min__info news-block-min__info_yellow news-block-min__info_max padding padding_0-10 text flex flex_flex-direction-column flex_align-items-center">
+                    <div class="news-block-min__circle news-block-min__circle_max news-block-min__circle_yellow text_text-align-center">
+                        <i class="fas fa-music text_color-white text_font-size-34"></i>
+                    </div>
+                    <div class="wrapper_news-max margin_top-20 flex flex_align-items-center flex_justify-content-space-between text_text-align-center">
+                        <img src="img/Layer 13.png" alt="">
+                        <div class="text_color-gray news-block-max__coments text_align-left flex flex_flex-direction-column flex_justify-content-space-between flex_align-items-start">
+                            <div class="text_color-yellow text_font-size-18"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <h2 class="text_font-weight-700">Peter145</h2>
+                            <p class="text_font-weight-400">“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.” <a class="text_font-weight-700 text_color-gray" href="">...read more</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-block-min news-block-min_border position">
+                <div class="news-block-min__hover flex flex_flex-direction-column flex_align-items-center">
+                    <div class="news-block-min__background-hover news-block-min__circle_green"></div>  
+                    <a href="" class="margin_top-25 margin_bottom-25 link link__read-more text_transform-uppercase text text_font-size-12 text_color-white padding padding_10-20"><i class="fas fa-search"></i> Show more</a>
+                    <div class="wrapper_comment flex flex_justify-content-space-between position">
+                        <p class="text_color-white text_font-size-16"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                        <p class="text_color-white text_font-size-16"><i class="far fa-comments"></i></p>
+                    </div>
+                </div>
+                <img src="img/Layer 6.png" alt="" class="position_absolute">
+                <h3 class="news-block-min__prise text text_text-align-center text_color-white text_font-size-12" >$2,990</h3>
+                <div class="news-block-min__info news-block-min__info_green padding padding_0-10 text flex flex_flex-direction-column flex_align-items-center">
+                    <div class="news-block-min__circle news-block-min__circle_green text_text-align-center">
+                        <i class="fas fa-home text_color-white text_font-size-34"></i>
+                    </div>
+                    <div class="wrapper_news margin_top-35 text_text-align-center">
+                        <a class="link text text_color-gray" href="#">2 bedroom house for rent in Dubai</a>
+                    </div>
+                    <a class="link margin_bottom-5 text_color-green text_transform-uppercase" href="#">Vision Agency</a>
+                    <p><span class="text_color-yellow"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span> (365)</p>
+                </div>
+            </div>
+            <div class="news-block-min news-block-min_border position">
+                <div class="news-block-min__hover flex flex_flex-direction-column flex_align-items-center">
+                    <div class="news-block-min__background-hover news-block-min__circle_yellow"></div>  
+                    <a href="" class="margin_top-25 margin_bottom-25 link link__read-more text_transform-uppercase text text_font-size-12 text_color-white padding padding_10-20"><i class="fas fa-search"></i> Show more</a>
+                    <div class="wrapper_comment flex flex_justify-content-space-between position">
+                        <p class="text_color-white text_font-size-16"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                        <p class="text_color-white text_font-size-16"><i class="far fa-comments"></i></p>
+                    </div>
+                </div>
+                <img src="img/Layer 7.png" alt="" class="position_absolute">
+                <div class="news-block-min__info news-block-min__info_yellow padding padding_0-10 text flex flex_flex-direction-column flex_align-items-center">
+                    <div class="news-block-min__circle news-block-min__circle_yellow text_text-align-center">
+                        <i class="fas fa-music text_color-white text_font-size-34"></i>
+                    </div>
+                    <div class="wrapper_news margin_top-35 text_text-align-center">
+                        <a class="link text text_color-gray" href="#">Beach party festival 2014</a>
+                    </div>
+                    <a class="link margin_bottom-5 text_color-yellow text_transform-uppercase" href="#">Long beach</a>
+                    <p><span class="text_color-yellow"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span> (1165)</p>
+                </div>
+            </div>
+            <div class="news-block-min news-block-min_border position">
+                <div class="news-block-min__hover flex flex_flex-direction-column flex_align-items-center">
+                    <div class="news-block-min__background-hover news-block-min__circle_purple"></div>  
+                    <a href="" class="margin_top-25 margin_bottom-25 link link__read-more text_transform-uppercase text text_font-size-12 text_color-white padding padding_10-20"><i class="fas fa-search"></i> Show more</a>
+                    <div class="wrapper_comment flex flex_justify-content-space-between position">
+                        <p class="text_color-white text_font-size-16"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                        <p class="text_color-white text_font-size-16"><i class="far fa-comments"></i></p>
+                    </div>
+                </div>
+                <img src="img/Layer 6.png" alt="" class="position_absolute">
+                <div class="news-block-min__info news-block-min__info_purple padding padding_0-10 text flex flex_flex-direction-column flex_align-items-center">
+                    <div class="news-block-min__circle news-block-min__circle_purple text_text-align-center">
+                        <i class="fas fa-bus-alt text_color-white text_font-size-34"></i>
+                    </div>
+                    <div class="wrapper_news margin_top-35 text_text-align-center">
+                        <a class="link text text_color-gray" href="#">Aliquam quis pulvinar purus</a>
+                    </div>
+                    <a class="link margin_bottom-5 text_color-purple text_transform-uppercase" href="#">Bus Trans</a>
+                    <p><span class="text_color-yellow"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span> (862)</p>
+                </div>
+            </div>
+            <div class="news-block-min news-block-min_border position">
+                <div class="news-block-min__hover flex flex_flex-direction-column flex_align-items-center">
+                    <div class="news-block-min__background-hover news-block-min__circle_green"></div>  
+                    <a href="" class="margin_top-25 margin_bottom-25 link link__read-more text_transform-uppercase text text_font-size-12 text_color-white padding padding_10-20"><i class="fas fa-search"></i> Show more</a>
+                    <div class="wrapper_comment flex flex_justify-content-space-between position">
+                        <p class="text_color-white text_font-size-16"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                        <p class="text_color-white text_font-size-16"><i class="far fa-comments"></i></p>
+                    </div>
+                </div>
+                <img src="img/Layer 8.png" alt="" class="position_absolute">
+                <h3 class="news-block-min__prise text text_text-align-center text_color-white text_font-size-12" >$2,990</h3>
+                <div class="news-block-min__info news-block-min__info_green padding padding_0-10 text flex flex_flex-direction-column flex_align-items-center">
+                    <div class="news-block-min__circle news-block-min__circle_green text_text-align-center">
+                        <i class="fas fa-home text_color-white text_font-size-34"></i>
+                    </div>
+                    <div class="wrapper_news margin_top-35 text_text-align-center">
+                        <a class="link text text_color-gray" href="#">4 bedroom house for rent in Dubai</a>
+                    </div>
+                    <a class="link margin_bottom-5 text_color-green text_transform-uppercase" href="#">reality Agency</a>
+                    <p><span class="text_color-yellow"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span> (165)</p>
+                </div>
+            </div>
+            <div class="news-block-max news-block-min_border position">
+                <img src="img/Layer 12.png" alt="" class="position_absolute">
+                <div class="news-block-max__shadow position"></div>
+                <div class="news-block-max__head flex flex_justify-content-space-between position text text_text-align-center">
+                    <a class="link text_color-white text_transform-uppercase text_font-size-18" href="#">Skybox club</a>
+                    <p><span class="text_color-yellow"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span> (1365)</p>
+                </div>
+                <div class="news-block-min__info news-block-min__info_yellow news-block-min__info_max padding padding_0-10 text flex flex_flex-direction-column flex_align-items-center">
+                    <div class="news-block-min__circle news-block-min__circle_max news-block-min__circle_yellow text_text-align-center">
+                        <i class="fas fa-music text_color-white text_font-size-34"></i>
+                    </div>
+                    <div class="wrapper_news-max margin_top-20 flex flex_align-items-center flex_justify-content-space-between text_text-align-center">
+                        <img src="img/Layer 13.png" alt="">
+                        <div class="text_color-gray news-block-max__coments text_align-left flex flex_flex-direction-column flex_justify-content-space-between flex_align-items-start">
+                            <div class="text_color-yellow text_font-size-18"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <h2 class="text_font-weight-700">Peter145</h2>
+                            <p class="text_font-weight-400">“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.” <a class="text_font-weight-700 text_color-gray" href="">...read more</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-block-min news-block-min_border position">
+                <div class="news-block-min__hover flex flex_flex-direction-column flex_align-items-center">
+                    <div class="news-block-min__background-hover news-block-min__circle_green"></div>  
+                    <a href="" class="margin_top-25 margin_bottom-25 link link__read-more text_transform-uppercase text text_font-size-12 text_color-white padding padding_10-20"><i class="fas fa-search"></i> Show more</a>
+                    <div class="wrapper_comment flex flex_justify-content-space-between position">
+                        <p class="text_color-white text_font-size-16"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                        <p class="text_color-white text_font-size-16"><i class="far fa-comments"></i></p>
+                    </div>
+                </div>
+                <img src="img/Layer 6.png" alt="" class="position_absolute">
+                <h3 class="news-block-min__prise text text_text-align-center text_color-white text_font-size-12" >$2,990</h3>
+                <div class="news-block-min__info news-block-min__info_green padding padding_0-10 text flex flex_flex-direction-column flex_align-items-center">
+                    <div class="news-block-min__circle news-block-min__circle_green text_text-align-center">
+                        <i class="fas fa-home text_color-white text_font-size-34"></i>
+                    </div>
+                    <div class="wrapper_news margin_top-35 text_text-align-center">
+                        <a class="link text text_color-gray" href="#">2 bedroom house for rent in Dubai</a>
+                    </div>
+                    <a class="link margin_bottom-5 text_color-green text_transform-uppercase" href="#">Vision Agency</a>
+                    <p><span class="text_color-yellow"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span> (365)</p>
+                </div>
+            </div>
+            <div class="news-block-min news-block-min_border position">
+                <div class="news-block-min__hover flex flex_flex-direction-column flex_align-items-center">
+                    <div class="news-block-min__background-hover news-block-min__circle_yellow"></div>  
+                    <a href="" class="margin_top-25 margin_bottom-25 link link__read-more text_transform-uppercase text text_font-size-12 text_color-white padding padding_10-20"><i class="fas fa-search"></i> Show more</a>
+                    <div class="wrapper_comment flex flex_justify-content-space-between position">
+                        <p class="text_color-white text_font-size-16"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                        <p class="text_color-white text_font-size-16"><i class="far fa-comments"></i></p>
+                    </div>
+                </div>
+                <img src="img/Layer 7.png" alt="" class="position_absolute">
+                <div class="news-block-min__info news-block-min__info_yellow padding padding_0-10 text flex flex_flex-direction-column flex_align-items-center">
+                    <div class="news-block-min__circle news-block-min__circle_yellow text_text-align-center">
+                        <i class="fas fa-music text_color-white text_font-size-34"></i>
+                    </div>
+                    <div class="wrapper_news margin_top-35 text_text-align-center">
+                        <a class="link text text_color-gray" href="#">Beach party festival 2014</a>
+                    </div>
+                    <a class="link margin_bottom-5 text_color-yellow text_transform-uppercase" href="#">Long beach</a>
+                    <p><span class="text_color-yellow"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span> (1165)</p>
+                </div>
+            </div>
+            <div class="wrapper_center margin_top-20 margin_bottom-20 flex flex_justify-content-space-around">
+                <a class="text text_font-size-18 text_color-gray link text__decoration-underline link_red" href="#">Load more <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="offers flex flex_justify-content-space-around">
+        <div class="wrapper_offers flex flex_flex-direction-column flex_align-items-center text text_text-align-center">
+            <div>
+                <h2 class="text_font-size-22 text_color-gray margin_top-90 margin_bottom-10">What can DuHoot offer to you?</h2>
+                <h3 class="margin_bottom-70 text_font-size-16">Etiam cursus ipsum quis enim faucibus</h3>
+            </div>
+            <div class="offers__diagrams margin_bottom-35 text_font-size-64 text_color-gray flex flex_justify-content-space-between flex_align-items-center">
+                <a href="" class="link offers__circle text_text-align-center link_green"><i class=" fas fa-home "></i></a>
+                <div class="offers__dash"></div>
+                <a href="" class="link offers__circle text_text-align-center"><i class=" far fa-grin-squint"></i></a>
+                <div class="offers__dash"></div>
+                <a href="" class="link offers__circle text_text-align-center"><i class=" fas fa-pen-nib"></i></a>
+                <div class="offers__dash"></div>
+                <a href="" class="link offers__circle text_text-align-center link_yellow"><i class=" fas fa-music"></i></a>
+                <div class="offers__dash"></div>
+                <a href="" class="link offers__circle text_text-align-center link_purple"><i class=" fas fa-bus-alt"></i></a>
+            </div>
+            <div class="flex flex_flex-direction-column flex_align-items-center">
+                <h2 class="text_color-green margin_bottom-45 text_font-size-24">Reality</h2>
+                <div class="wrapper_offers-info flex flex_justify-content-space-between text_align-left">
+                    <div class="wrapper_offers-text flex flex_justify-content-space-between">
+                            <div class="offers__marker text_text-align-center">
+                                    <i class="fas fa-leaf text_color-white text_font-size-34"></i>
+                            </div>
+                        <p class="offers__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                            Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra.
+                            Maecenas vitae risus est. In hendrerit,massa.</p>
+                    </div>
+                    <div class="wrapper_offers-text flex flex_justify-content-space-between">
+                            <div class="offers__marker text_text-align-center">
+                                    <i class="fas fa-bolt text_color-white text_font-size-34"></i>
+
+                            </div>
+                            <p class="offers__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                                Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra.
+                                Maecenas vitae risus est. In hendrerit,massa.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <footer class="footer flex flex_flex-direction-column flex_align-items-center">
+        <div class="search__layer search__layer_gray search__layer search__layer_footer"></div>
+        <div class="wrapper_block z-index">
+            <div class="footer__send-form text flex flex_flex-direction-column flex_align-items-center flex_justify-content-space-around">
+                <h2 class="text_color-white text_font-size-24">Subscribe to our newsletter</h2>
+                <form class="send-form" action="get">
+                    <input class="send-form__input padding padding_10-20 text_font-size-18" required placeholder="your@email.com" type="text">
+                    <button class="send-form__button text_transform-uppercase text text_color-white cursor" type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer__contacts flex flex_justify-content-space-around">
+                <div class="footer__lincks text text_color-white flex flex_flex-direction-column margin_top-35">
+                    <h3 class="text__decoration-underline text_font-size-16 margin_bottom-25">Ipsum quis</h3>
+                    <a class="text_color-lightpink link margin_bottom-5 link_red" href="#">Aliquam quis</a>
+                    <a class="text_color-lightpink link margin_bottom-5 link_red" href="#">Pulvinar purus</a>
+                    <a class="text_color-lightpink link margin_bottom-5 link_red" href="#">Etiam cursus</a>
+                    <a class="text_color-lightpink link margin_bottom-5 link_red" href="#">Ipsum quis</a>
+                    <a class="text_color-lightpink link margin_bottom-5 link_red" href="#">Enim faucibus</a>
+                </div>
+                <div class="footer__lincks text text_color-white flex flex_flex-direction-column margin_top-35">
+                    <h3 class="text__decoration-underline text_font-size-16 margin_bottom-25">Ipsum quis</h3>
+                    <a class="text_color-lightpink link margin_bottom-5 link_red" href="#">Aliquam quis</a>
+                    <a class="text_color-lightpink link margin_bottom-5 link_red" href="#">Pulvinar purus</a>
+                    <a class="text_color-lightpink link margin_bottom-5 link_red" href="#">Etiam cursus</a>
+                    <a class="text_color-lightpink link margin_bottom-5 link_red" href="#">Ipsum quis</a>
+                    <a class="text_color-lightpink link margin_bottom-5 link_red" href="#">Enim faucibus</a>
+                </div>
+                <div class="footer__follow text text_color-white margin_top-35">
+                    <h3 class="text__decoration-underline text_font-size-16 margin_bottom-30">Follow us</h3>
+                    <div class="footer__social margin_bottom-45 flex flex_justify-content-space-between">
+                        <a class="text_color-white text_font-size-30 link link_red" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="text_color-white text_font-size-30 link link_red" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="text_color-white text_font-size-30 link link_red" href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a class="text_color-white text_font-size-30 link link_red" href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <h3 class="text_font-weight-400">Copyright © All Rights reserved</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
