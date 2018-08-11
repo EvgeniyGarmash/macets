@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@color-black: #000000;
+@color-gray-shade-of-black:#232323;
+@color-red:#ff343d;
+@color-white: #ffffff;
+@color-pale-gray-blue: #e8ecf1;
+@color-light-gray:#e1e1e1;
+@color-light-blue:#eff2f6;
+@color-green:#318f76;
+@color-gray: #92a1a5;
+@font: Montserrat;
+@multiplier: 1;
+
+.text(@size,@color,@weight,@align){
+    font-size: @size * @multiplier;
+    color: @color;
+    font-weight: @weight;
+    text-align: @align;
+}
+.flex {
+    display: flex;
+    &_direction-column {
+        flex-direction: column;
+    }
+    &_align-items-center {
+        align-items: center;
+    }
+    &_align-items-start {
+        align-items: start;
+    }
+    &_align-items-flex-end {
+        align-items: flex-end;
+    }
+    &_justify-content-space-between {
+        justify-content: space-between;
+    }
+    &_justify-content-space-around {
+        justify-content: space-around;
+    }
+    &_justify-content-center {
+        justify-content: center;
+    }
+    &_justify-content-flex-start{
+        justify-content: flex-start;
+    }
+    &_wrap{
+        flex-wrap: wrap;
+    }
+}
+.logo{
+    text-decoration: none;
+    position: relative;
+    width: 80px * @multiplier;
+    height: 25px * @multiplier;
+    .text(24px,@color-black,700,left);
+    &__circle{
+        transition: 1s;
+        position: absolute;
+        border-radius: 50%;
+        border: 3px * @multiplier solid @color-red;
+        background-color: @color-white;
+        width: 5px * @multiplier;
+        height: 5px * @multiplier;
+        right: -10px * @multiplier;
+        top: -5px * @multiplier;
+    }
+}
+.phone{
+    margin-top: 24px * @multiplier;
+    .text(14px, @color-gray, 400, left);
+}
+.button{
+    display: block;
+    background-color: @color-white;
+    width: 185px * @multiplier;
+    height: 58px * @multiplier;
+    line-height: 58px * @multiplier;
+    border-radius: 29px * @multiplier;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px * @multiplier solid @color-white;
+    box-sizing: border-box; 
+    transition: 1s;
+    .text(18px,@color-black, 700, center);
+    &__position-1{
+        margin-top: 64px * @multiplier;
+        transform: rotate(-90deg);
+        &:hover{
+            background: none;
+            color: @color-white;
+        }
+    }
+    &__position-2{
+        border-color: #3b3b3b;
+        background: none;
+        color: @color-white;
+        &:hover{
+            background: #3b3b3b;
+            border-color: @color-white;
+        }
+    }
+    &__position-3{
+        border-color: #eff2f6;
+        &:hover{
+            border-color: @color-black;
+        }
+    }
+    &__position-4{
+        margin-top: 50px;
+        color: @color-green;
+        &:hover{
+            background: none;
+            color: @color-white;
+        }
+    }
+}
+.body{
+    width: 100%;
+    height: 5500px * @multiplier;
+    background: @color-white;
+    font-family: @font;
+    line-height: 30px * @multiplier;
+    box-sizing: border-box;
+}
+.header{
+    width: 2000px * @multiplier;
+    height: 1032px * @multiplier;
+    background: @color-light-blue;
+    position: relative;
+    &__background-1{
+        position: absolute;
+        right: 0;
+        background-color:  @color-red;
+        width: 760px * @multiplier;
+        height: 1032px * @multiplier;
+    }
+    &__background-2{
+        position: absolute;
+        right: 434px * @multiplier;
+        top: 188px * @multiplier;
+        border-radius: 50%;
+        background-color:  @color-white;
+        width: 652px * @multiplier;
+        height: 652px * @multiplier;
+    }
+    &__background-3{
+        z-index: 2;
+        position: absolute;
+        right: 244px * @multiplier;
+        top: 230px * @multiplier;
+        width: 1035px * @multiplier;
+        height: 590px * @multiplier;
+    }
+    &__background-text{
+        z-index: 1;
+        .text(360px,@color-red,700,left);
+        position: absolute;
+        right: -400px * @multiplier;
+        top: 300px * @multiplier;
+        cursor: default;
+        text-transform: uppercase;
+        transform: scaleX(1.0008) rotate(90deg);
+        text-shadow: 0px -10px * @multiplier 55px * @multiplier rgba(0, 1, 1, 0.25);
+    }
+    &__text-box-1{
+        width: 1570px * @multiplier;
+        height: 25px * @multiplier;
+        margin-top: 60px * @multiplier;
+        margin-left: 220px * @multiplier;
+    }
+    &__text-box-1-1{
+        width: 295px * @multiplier;
+        height: 25px * @multiplier;
+    }
+    &__text-box-1-2{
+        z-index: 2;
+        position: relative;
+        width: 140px * @multiplier;
+        height: 25px * @multiplier;
+        text-transform: uppercase;
+        &_text{
+            .text(16px,@color-white,700,left);
+        }       
+    }
+    &__text-box-2{
+        width: 470px * @multiplier;
+        height: 470px * @multiplier;
+        margin-left: 250px * @multiplier;
+        margin-top: 405px * @multiplier;
+    }
+    &__text-box-2-1{
+        width: 390px * @multiplier;
+        height: 150px * @multiplier;
+        margin-left: 80px * @multiplier;
+        &_head{
+            .text(60px,@color-black,700,left);
+        }
+        &_text{
+            .text(14px,@color-gray,400,left);
+        }
+    }
+    &__text-box-2-2{
+        width: 125px;
+        height: 30px;
+        margin-top: 210px;
+        .text(18px, @color-black, 700, left);
+        transform: rotate(-90deg);
+    }
+}
+.tag-1{
+    width: 2000px * @multiplier;
+    height: 614px * @multiplier;
+    &__block-1{
+        width: 614px * @multiplier;
+        height: 614px * @multiplier;
+        background: url(img/Circle.png);
+    }
+    &__block-1-1{
+        width: 290px * @multiplier;
+        height: 90px * @multiplier;
+        cursor: default;
+        &_head{
+            .text(60px,@color-black,700,left);
+        }
+        &_text{
+            .text(14px, @color-gray, 400, left);
+        }
+    }
+    &__block-2{
+        position: relative;
+        width: 1386px * @multiplier;
+        height: 614px * @multiplier;
+        background: url(img/Photo.png);
+    }
+    &__block-2-filter{
+        padding-left: 90px * @multiplier;
+        position: absolute;
+        left: 0;
+        background-color:  rgba(0, 0, 0, 0.65);
+        width: 625px * @multiplier;
+        height: 614px * @multiplier;
+        .text(60px, @color-white, 700, left);
+        line-height: 64px * @multiplier;
+        box-sizing: border-box;
+    }
+    &__block-2-button{
+        position: absolute;
+        right: 216px * @multiplier;
+        top: 216px * @multiplier;
+        width: 58px * @multiplier;
+        height: 398px * @multiplier;
+
+    }
+    &__block-2-button-dash{
+        background: @color-white;
+        width: 2px * @multiplier;
+        height: 201px * @multiplier;
+    }
+}
+.features{
+    width: 2000px;
+    height: 600px;
+    &__wrapper{
+        cursor: default;
+        width: 1386px;
+        height: 196px; 
+    }
+    &__box{
+        width: 260px;
+        height: 196px;
+        .text(30px,@color-black,700, left);
+    }
+}
+.tag-2{
+    width: 2000px * @multiplier;
+    height: 656px * @multiplier;
+    &__block-1{
+        background: url(img/control.png);
+        width: 983px * @multiplier;
+        height: 656px * @multiplier;
+    }
+    &__block-2{
+        position: relative;
+        width: 1017px * @multiplier;
+        height: 656px * @multiplier;
+        background: @color-gray-shade-of-black;
+    }
+    &__block-2-background{
+        position: absolute;
+        right: 0;
+        top: 55px * @multiplier;
+    }
+    &__block-2-1{
+        cursor: default;
+        z-index: 1;
+        width: 740px * @multiplier;
+        height: 440px * @multiplier;
+        line-height: 95px * @multiplier;
+        .text(85px, @color-white, 700, left);
+        &_red-text{
+            color: @color-red;
+        }
+    }
+}
+.products{
+    height: 870px * @multiplier;
+    width: 2000px * @multiplier;
+    position: relative;
+    &__background{
+        position: absolute;
+        right: 0;
+        top: 140px * @multiplier;
+    }
+    &__text-box{
+        width: 740px * @multiplier;
+        height: 290px * @multiplier;
+        margin-left: 215px * @multiplier;
+        margin-top: 330px * @multiplier;
+        line-height: 95px * @multiplier;
+        .text(85px, @color-black, 700, left);
+    }
+}
+.tag-3{
+    width: 2000px * @multiplier;
+    height: 1190px * @multiplier;
+    background: url(img/Sea.png);
+    &__text-box{
+        margin-top: 400px * @multiplier;
+        width: 900px * @multiplier;
+        height: 210px * @multiplier;
+        line-height: 102px * @multiplier;
+        .text(92px,@color-white,700,center);
+    }
+}
+.footer{
+    width: 2000px * @multiplier;
+    height: 538px * @multiplier;
+    &__text-box{
+        width: 330px * @multiplier;
+        height: 70px * @multiplier;
+        line-height: 30px * @multiplier;
+        .text(14px,@color-gray,400,lest);
+    }
+}
